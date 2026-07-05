@@ -1,0 +1,11 @@
+app:
+  name: data-engineering-programming-final
+  master: local[*]
+
+paths:
+  pedidos_input: data/input/datasets-csv-pedidos/data/pedidos
+  pagamentos_input: data/input/dataset-json-pagamentos/data/pagamentos
+  output_report: output/relatorio_pedidos_recusados_legitimos
+
+report:
+  year: 2025

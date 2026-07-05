@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-engineering-programming-final"
+version = "0.1.0"
+description = "Projeto final da disciplina Data Engineering Programming usando PySpark e orientação a objetos."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyspark==4.1.2",
+    "PyYAML==6.0.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-v"
