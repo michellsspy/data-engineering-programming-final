@@ -28,3 +28,6 @@ _SUCCESS
 .DS_Store
 .vscode/
 .idea/
+
+# Local evidences for final PDF
+evidencias/
